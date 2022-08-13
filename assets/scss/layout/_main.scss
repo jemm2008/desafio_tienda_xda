@@ -1,0 +1,66 @@
+.left-section{
+    grid-area: ls;
+    display: flex;
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__about{
+        padding: 48px 80px;
+        flex-grow: 1;
+    }
+
+    &__about-title{
+        font-size: $xx-large;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 19.2px;
+        text-align: center;
+    }
+
+    &__about-content{
+        padding-top: 50px;
+        font-size: $x-large;
+        line-height: 27.2px;
+        color: $granite-gray;
+    }
+
+    &__newsletter{
+        background-color: $smocky-black;
+        color: $white;
+        padding: 16px 80px;
+        margin-left: 2px;
+        box-sizing: border-box;
+        position: relative;
+        min-height: 172px;
+    }
+
+    &__subscribe{
+        position: absolute;
+        top: 58px;
+        right: -58px;
+        transform: rotate(90deg);
+        background-color: $white;
+        color: $smocky-black;
+        width: 172px;
+        text-align: center;
+    }
+
+
+    &__img{
+        height: 100%;
+        background-color: $smocky-black;
+        background-size: cover;
+        background-position: top center;
+        display: block;
+    }
+}
+
+.right-section{
+    grid-area: rs;
+    height: 100%;
+    width: 100%;
+}
+
